@@ -2,6 +2,7 @@ package com.example.amandreka;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.sqlite.SQLiteConstraintException;
 import android.os.Bundle;
 import android.util.Log;
@@ -35,6 +36,12 @@ public class VendeurActivity extends AppCompatActivity {
                 Vendeur vendeur = new Vendeur(nom.getText().toString(), cabinet.getText().toString(), specialisation.getText().toString(), localisation.getText().toString());
                 try {
                     vendeur.insererVendeur(dbHelper);
+                    setContentView(R.layout.activity_profil_vendeur);
+                    Intent i = new Intent(getApplicationContext(), ProfilVendeur.class);
+                    i.putExtra("nom", nom.getText().toString());
+                    i.putExtra("cabinet", cabinet.getText().toString());
+                    i.putExtra("specialisation", specialisation.getText().toString());
+                    startActivity(i);
                 } catch (Exception e) {
                     Toast.makeText(VendeurActivity.this, "Nom de vendeur déjà existant", Toast.LENGTH_SHORT).show();
                 }
