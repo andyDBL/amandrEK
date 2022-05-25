@@ -15,7 +15,7 @@ import com.example.amandreka.DBHelper;
 public class Vendeur {
     // TABLE
     public static final String TABLE_NAME = "vendeur";
-
+    // COLUMNS
     public static final String COLUMN_ID = "id";
     public static final String COLUMN_NOM = "nom";
     public static final String COLUMN_CABINET = "cabinet";
@@ -131,6 +131,10 @@ public class Vendeur {
         cursor.close();
 
         return vendeur;
+    }
+
+    public boolean exists(@NonNull DBHelper helper, String nom) {
+        return findVendeur(helper, nom) != null;
     }
 
 }

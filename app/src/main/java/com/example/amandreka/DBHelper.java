@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
+import com.example.amandreka.Model.Client;
 import com.example.amandreka.Model.Vendeur;
 
 public class DBHelper extends SQLiteOpenHelper {
@@ -18,10 +19,9 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String client = "CREATE TABLE client (id INTEGER primary key, nom TEXT, prenom TEXT, dateNaissance DATETIME DEFAULT CURRENT_TIMESTAMP)";
         String rendez_vous = "CREATE TABLE client (id INTEGER primary key, nom TEXT, prenom TEXT, dateNaissance TEXT, localisation TEXT)";
         db.execSQL(Vendeur.CREATE_TABLE);
-        db.execSQL(client);
+        db.execSQL(Client.CREATE_TABLE);
     }
 
     @Override
