@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button vendeur, client;
+    Button vendeur, client,connexion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,14 @@ public class MainActivity extends AppCompatActivity {
 
         vendeur = findViewById(R.id.buttonVendor);
         client = findViewById(R.id.ButtonClient);
+        connexion= findViewById(R.id.buttonConnexion);
+        connexion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent conn=new Intent(getApplicationContext(),ConnexionActivity.class);
+                startActivity(conn);
+            }
+        });
 
         vendeur.setOnClickListener(new View.OnClickListener() {
             @Override
