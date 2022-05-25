@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AmandrEka">
         <activity
+            android:name=".VendeurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClientActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
