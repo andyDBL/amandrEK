@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AmandrEka">
         <activity
+            android:name=".ConnexionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailClientActivity"
+            android:exported="false" />
+        <activity
             android:name=".Reservation"
             android:exported="false" />
         <activity
