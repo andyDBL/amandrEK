@@ -11,4 +11,9 @@ public class ProfilVendeur extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profil_vendeur);
     }
+
+    public String getVendeurName(int i){
+        String selectQuery = "SELECT " ;
+        return selectQuery;
+    }
 }

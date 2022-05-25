@@ -12,8 +12,10 @@
         android:layout_height="wrap_content"
         android:text="Nom "
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="21dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
 
     <EditText
         android:id="@+id/editTextNameVendeur"
@@ -23,60 +25,75 @@
         android:ems="10"
         android:hint="RAKOTO"
         android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/textViewNameVendeur"
-        tools:layout_editor_absoluteX="14dp" />
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameVendeur" />
 
     <TextView
         android:id="@+id/textViewCabinet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:text="Cabinet"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNameVendeur"
-        tools:layout_editor_absoluteX="17dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNameVendeur" />
 
     <EditText
         android:id="@+id/editTextCabinet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:text="Cabinet Mahamasina"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCabinet"
-        tools:layout_editor_absoluteX="14dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCabinet" />
 
     <TextView
         android:id="@+id/textViewSpecialisation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="Spécialisation"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/editTextCabinet"
-        tools:layout_editor_absoluteX="14dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCabinet" />
 
     <EditText
         android:id="@+id/editTextSpecialisation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
         android:ems="10"
         android:hint="Pédiatre"
         android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSpecialisation"
-        tools:layout_editor_absoluteX="14dp" />
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSpecialisation" />
 
     <TextView
         android:id="@+id/textViewRendezVous"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:text="Vos Rendez-vous"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSpecialisation"
-        tools:layout_editor_absoluteX="17dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSpecialisation" />
 
     <LinearLayout
         android:layout_width="409dp"
@@ -104,4 +121,5 @@
                 android:text="TextView" />
         </LinearLayout>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
