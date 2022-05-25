@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilVendeur">
+
+    <TextView
+        android:id="@+id/textViewNameVendeur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom "
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="21dp" />
+
+    <EditText
+        android:id="@+id/editTextNameVendeur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="RAKOTO"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameVendeur"
+        tools:layout_editor_absoluteX="14dp" />
+
+    <TextView
+        android:id="@+id/textViewCabinet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Cabinet"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNameVendeur"
+        tools:layout_editor_absoluteX="17dp" />
+
+    <EditText
+        android:id="@+id/editTextCabinet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Cabinet Mahamasina"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCabinet"
+        tools:layout_editor_absoluteX="14dp" />
+
+    <TextView
+        android:id="@+id/textViewSpecialisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Spécialisation"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCabinet"
+        tools:layout_editor_absoluteX="14dp" />
+
+    <EditText
+        android:id="@+id/editTextSpecialisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Pédiatre"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSpecialisation"
+        tools:layout_editor_absoluteX="14dp" />
+
+    <TextView
+        android:id="@+id/textViewRendezVous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Vos Rendez-vous"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSpecialisation"
+        tools:layout_editor_absoluteX="17dp" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="289dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRendezVous"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nomClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/horaireClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

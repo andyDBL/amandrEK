@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class VendeurActivity extends AppCompatActivity {
+public class ProfilVendeur extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

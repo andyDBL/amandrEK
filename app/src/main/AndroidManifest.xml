@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AmandrEka">
         <activity
+            android:name=".Reservation"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilVendeur"
+            android:exported="false" />
+        <activity
             android:name=".VendeurActivity"
             android:exported="false" />
         <activity
